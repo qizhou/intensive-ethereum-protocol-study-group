@@ -8,5 +8,6 @@ RANDAO mixing https://github.com/prysmaticlabs/prysm/blob/04f231a40083a5c1cf501a
 # Apr 7 Light Client
 - Sync Committee (different vote committee) https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/beacon-chain.md#sync-committee
   - 512 vs 128
+  - Changes every 256 epochs (8192 slots)
 - https://github.com/ethereum/portal-network-specs/blob/master/beacon-chain/beacon-network.md
 - https://github.com/ethereum/consensus-specs/blob/b18bbd8c6199e6f310fac81ee790120c8136ced6/specs/altair/light-client/sync-protocol.md
