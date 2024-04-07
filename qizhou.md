@@ -6,8 +6,13 @@ RANDAO mixing https://github.com/prysmaticlabs/prysm/blob/04f231a40083a5c1cf501a
 - Attestation data structure https://github.com/prysmaticlabs/prysm/blob/8eb82dd378d5e0d8b6d0035c8870940fb85b6a5e/proto/prysm/v1alpha1/attestation.pb.go#L27
 
 # Apr 7 Light Client
-- Sync Committee (different vote committee) https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/beacon-chain.md#sync-committee
+- Sync Committee (different block proposer committee) https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/beacon-chain.md#sync-committee
   - 512 vs 128
   - Changes every 256 epochs (8192 slots)
+  - https://eth2book.info/capella/part3/config/preset/#sync-committee
+  - Sync Committee Election https://github.com/ethereum/consensus-specs/blob/dev/specs/altair/beacon-chain.md#get_next_sync_committee_indices
+    - Validator can be duplicated in a committee
+  - Block Proposer Committee Election https://github.com/ethereum/consensus-specs/blob/dev/specs/phase0/beacon-chain.md#compute_committee
+    - Validator is unique in all committee of an epoch
 - https://github.com/ethereum/portal-network-specs/blob/master/beacon-chain/beacon-network.md
 - https://github.com/ethereum/consensus-specs/blob/b18bbd8c6199e6f310fac81ee790120c8136ced6/specs/altair/light-client/sync-protocol.md
